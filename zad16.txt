@@ -1,0 +1,19 @@
+Jaki typ mają następujące wyrażenia?
+
+a)   +                          Num a => a -> a -> a
+b)   + 37                       Num a => a -> a
+c)   append                     [a] -> t -> [a]
+d)   append [1,2]               Num a => t -> [a]
+e)   map                        (a -> b) -> [a] -> [b]
+f)   map square [1,2,3,4,5]     Floating a => [a -> a]
+g)   map square [['a']]         -
+h)   map length [['a']]         [Int]
+i)   foldl                      Foldable t => (b -> a -> b) -> b -> t a -> b
+j)   foldl (++)                 Foldable t => [a] -> t [a] -> [a]
+k)   foldl (++) []              Foldable t => t [a] -> [a]
+l)   f 7                        {f :: Int -> B} |- (f 7) :: B
+m)   \f -> f 7                  (Int -> B) -> B
+n)   + (f x) (g x)              ...
+o)   f 7 (g 'x')                ...
+p)   \f -> f (g x)              ...
+q)   (\f -> f (g x)) square     ...
