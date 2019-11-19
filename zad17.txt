@@ -1,0 +1,8 @@
+Proszę obliczyć najbardziej ogólny unifikator dla następujących wyrażeń.
+
+a)	f(x,g(b))		= f(a,y)		=> [x/a, y/g(b)]
+b)	f(h(x,b),y)		= f(h(a,y),x)		=> nie ma unifikatora
+c)	f(x,y)			= f(h(x,b),y)		=> nie ma unifikatora
+d)	g(x,h(x,y),h(y,h(x,y)))	= g(x,y',h(z,y'))	=> [y'/h(x,y), z/y]
+e)	g(x,h(x,y),h(y,h(x,y)))	= g(x,y',h(y',z))	=> nie ma unifikatora
+f)	f(a,x,h(g(y)))		= f(z,h(z),h(z'))	=> [z/a, x/h(z), z'/g(y)]
